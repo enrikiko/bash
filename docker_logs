@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+select option in $(docker ps --format "{{.Names}}")
+do
+  docker logs -f $option
+  break
+done
