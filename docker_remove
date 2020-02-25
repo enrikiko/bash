@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 select option in $(docker ps --format "{{.Names}}")
 do
-  docker delete $option
+  docker rm $option
   break
 done
