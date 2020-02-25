@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-select option in $(docker ps --format "{{.Names}}")
+select option in $(docker ps  -f "status=exited" --format "{{.Names}}")
 do
   docker start $option
   break
