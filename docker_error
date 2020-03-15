@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 select option in $(docker ps --format "{{.Names}}")
 do
-  select command in "bash" "ash"
-  do
-      docker exec -it $option $command | grep Error!
-      break
-  done
+  docker logs -f $option | grep Error!
   break
 done
