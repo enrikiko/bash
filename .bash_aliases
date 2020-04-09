@@ -6,3 +6,6 @@ alias  remove="bash ~/bash/docker_remove"
 alias  stop="bash ~/bash/docker_stop"
 alias  start="bash ~/bash/docker_start"
 alias  error="bash ~/bash/docker_error"
+if [[ "$OSTYPE" == "linux-gnueabihf" ]]; then
+  alias temp="sudo vcgencmd measure_temp"
+fi
