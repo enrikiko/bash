@@ -7,6 +7,7 @@ alias  stop="bash ~/bash/docker/docker_stop"
 alias  start="bash ~/bash/docker/docker_start"
 alias  error="bash ~/bash/docker/docker_error"
 alias  kill_pod="bash ~/bash/docker/docker_kill"
+alias  kill_pod_all="bash ~/bash/docker/docker_kill_all"
 if [[ "$OSTYPE" == "linux-gnueabihf" ]]; then
   alias temp="sudo vcgencmd measure_temp"
 fi
