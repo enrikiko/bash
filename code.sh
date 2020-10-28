@@ -1,6 +1,7 @@
-if [ -f ~/bash/.bash_aliases ]; then
-  pushd ~/bash/
+if [ -f ${bash_location}/.bash_aliases ]
+  then
+  pushd ${bash_location}
   git pull
-  . ~/bash/.bash_aliases
+  . ${bash_location}/.bash_aliases
   popd
 fi
