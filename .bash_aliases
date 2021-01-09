@@ -18,6 +18,7 @@ alias token="sh   ${bash_location}/script/pushNotification.sh"
 alias alert="say Alert, Alert, Alert"
 # SSH
 alias master="sh ${bash_location}/ssh/pi_master.sh"
+alias kube="sh ${bash_location}/ssh/pi_kube.sh"
 alias slave="sh ${bash_location}/ssh/pi_slave.sh"
 alias mini="sh ${bash_location}/ssh/pi_mini.sh"
 if [[ "$OSTYPE" == "linux-gnueabihf" ]]; then

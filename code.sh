@@ -1,3 +1,4 @@
+#!bin/sh
 if [ -f ${bash_location}/.bash_aliases ]
   then
   pushd ${bash_location}
