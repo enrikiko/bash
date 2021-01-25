@@ -21,7 +21,7 @@ alias master="sh ${bash_location}/ssh/pi_master.sh"
 alias kube="sh ${bash_location}/ssh/pi_kube.sh"
 alias slave1="sh ${bash_location}/ssh/pi_kube_slave1.sh"
 alias slave2="sh ${bash_location}/ssh/pi_kube_slabe2.sh"
-alias slave="sh ${bash_location}/ssh/pi_slave.sh"
+#alias slave="sh ${bash_location}/ssh/pi_slave.sh"
 alias mini="sh ${bash_location}/ssh/pi_mini.sh"
 if [[ "$OSTYPE" == "linux-gnueabihf" ]]; then
   alias temp="sudo vcgencmd measure_temp"
